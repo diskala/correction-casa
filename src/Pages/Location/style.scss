@@ -1,0 +1,109 @@
+.logement {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .gallery {
+        position: relative;
+
+        img {
+            height: 415px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        span {
+            color: white;
+            position: absolute;
+            right: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
+        }
+
+        .fa-solid {
+            color: white;
+            font-size: 70px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fa-angle-left {
+            left: 20px;
+        }
+
+        .fa-angle-right {
+            right: 20px;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        color: #FF6060;
+        align-items: center;
+        margin-top: 30px;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            :first-child {
+                font-size: 36px;
+            }
+
+            :last-child {
+                font-size: 18px;
+            }
+        }
+
+        .owner {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        .tags {
+            display: flex;
+            gap: 20px;
+
+            span {
+                background-color: #FF6060;
+                color: white;
+                border-radius: 10px;
+                padding: 5px 30px;
+            }
+        }
+
+        .stars {
+            display: flex;
+            gap: 10px;
+
+            .fa-star {
+                color: #FF6060;
+                font-size: 35px;
+
+                &.empty {
+                    color: lightgray;
+                }
+            }
+        }
+    }
+}
